@@ -35,6 +35,11 @@ pip install -r requirements.txt
   - `data/`: Data loading and processing utilities
   - `models/`: Model-related code and utilities
   - `experiments/`: Experimental scripts and analysis
+- `scripts/`: Automation and utility scripts
+  - `data/`: Data preparation scripts
+  - `training/`: Model training scripts
+  - `analysis/`: Analysis and visualization scripts
+  - `utils/`: Utility scripts
 - `tests/`: Unit tests
 - `notebooks/`: Jupyter notebooks for exploration and visualization
 
@@ -56,6 +61,19 @@ KnowledgeRep-LLMs/
 │   └── experiments/
 │       ├── __init__.py
 │       └── layer_analysis.py
+├── scripts/
+│   ├── data/
+│   │   ├── download_datasets.sh
+│   │   └── preprocess_data.py
+│   ├── training/
+│   │   ├── train_model.py
+│   │   └── evaluate_model.py
+│   ├── analysis/
+│   │   ├── analyze_mlp_layers.py
+│   │   └── visualize_results.py
+│   └── utils/
+│       ├── setup_environment.sh
+│       └── cleanup.sh
 ├── tests/
 │   └── __init__.py
 └── notebooks/
