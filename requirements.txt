@@ -19,3 +19,11 @@ pandas
 nltk
 textblob
 newsapi-python
+python-dateutil
+python-dotenv
+pyarrow
+sodapy
+xmltodict
+langdetect
+scikit-learn
+datasets

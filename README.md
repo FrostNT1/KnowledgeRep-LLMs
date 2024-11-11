@@ -40,6 +40,13 @@ pip install -r requirements.txt
   - `training/`: Model training scripts
   - `analysis/`: Analysis and visualization scripts
   - `utils/`: Utility scripts
+- `data/`: Data storage (not tracked by git)
+  - `raw/`: Raw scraped data
+  - `processed/`: Cleaned and preprocessed data
+  - `sample/`: Small data samples for testing
+- `checkpoints/`: Saved models and training states (not tracked by git)
+  - `experiment_01/`: Organized by experiment
+  - `experiment_02/`: Organized by experiment
 - `tests/`: Unit tests
 - `notebooks/`: Jupyter notebooks for exploration and visualization
 
@@ -74,6 +81,13 @@ KnowledgeRep-LLMs/
 │   └── utils/
 │       ├── setup_environment.sh
 │       └── cleanup.sh
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── sample/
+├── checkpoints/
+│   ├── experiment_01/
+│   └── experiment_02/
 ├── tests/
 │   └── __init__.py
 └── notebooks/
