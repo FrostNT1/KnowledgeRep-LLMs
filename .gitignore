@@ -1,4 +1,4 @@
- # Python
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,6 +20,13 @@ wheels/
 .installed.cfg
 *.egg
 
+# DVC
+/.dvc/
+.dvc/
+/*.dvc.lock
+.dvc/tmp/
+.dvc/config.local
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -28,7 +35,7 @@ venv/
 env/
 ENV/
 
-# IDE
+# IDEs
 .idea/
 .vscode/
 *.swp
@@ -48,3 +55,4 @@ logs/
 # Environment variables
 .env
 .env.*
+/data
