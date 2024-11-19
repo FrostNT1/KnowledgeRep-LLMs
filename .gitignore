@@ -22,6 +22,7 @@ wheels/
 
 # DVC
 /.dvc/
+.dvc/
 /*.dvc.lock
 .dvc/tmp/
 .dvc/config.local
