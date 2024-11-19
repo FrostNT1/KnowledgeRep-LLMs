@@ -19,6 +19,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.dvc/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -48,3 +49,4 @@ logs/
 # Environment variables
 .env
 .env.*
+/data
