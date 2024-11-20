@@ -153,6 +153,9 @@ To address these challenges, we employed a combination of automated metrics and 
 ### Results and Interpretation
 
 (Placeholder for Image 5: A table or graph displaying evaluation metrics—EM, F1, human evaluation scores—across the three fine-tuning scenarios.)
+![alt text](images/full-model-evaluation-metrics.png)
+![alt text](images/attention-model-evaluation-metrics.png)
+![alt text](images/mlp-model-evaluation-metrics.png)
 
 #### Model Performance
 
