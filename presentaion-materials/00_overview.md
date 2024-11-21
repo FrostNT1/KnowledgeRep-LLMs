@@ -332,6 +332,7 @@ The results indicate that MLP layers play a pivotal role in storing and integrat
 - **Now**:    [⬜🔲🔲🔲🔲] (One aspect illuminated)
 - **Goal**:   [⬜⬜⬜⬜⬜] (Full interpretability)
 
+
 ## Demo
 
 To bring our findings to life, we have prepared a demo that showcases the practical implications of our research. By focusing on the MLP layers, we demonstrate how efficient updates can be achieved, allowing AI systems to evolve dynamically with the world they interact with.
