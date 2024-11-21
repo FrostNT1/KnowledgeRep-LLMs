@@ -79,7 +79,7 @@ Our hypothesis arises from the following considerations:
     - Consistency with the training data
 - **Complexity of LLMs**: The intricate architecture of LLMs means that changes in one part of the network can have unpredictable effects elsewhere, complicating analysis.
 
-(Placeholder for Image 2: An illustration depicting superposition in neural networks, showing overlapping representations within neurons.)
+![An illustration depicting superposition in neural networks, showing overlapping representations within neurons.](images/superposition.png)
 
 ## Approach
 
@@ -108,8 +108,6 @@ The data includes articles and posts not present (ideally/assumed to be not pres
 - **Resource Constraints**: Running large models on limited hardware required optimization, such as reducing model size and batch processing.
 - **Quality Control**: Ensured that generated questions were relevant and accurately reflected the content.
 
-(Placeholder for Image 3: A flowchart showing the data collection and preprocessing pipeline, from sourcing to QA pair generation.)
-
 ### Fine-Tuning Scenarios
 
 We conducted experiments under three fine-tuning scenarios using the Llama 3.2 model:
@@ -126,7 +124,11 @@ We conducted experiments under three fine-tuning scenarios using the Llama 3.2 m
   - **Method**: Froze all layers except the MLP layers during training.
   - **Purpose**: To assess whether updating only the MLP layers allows the model to learn new world knowledge effectively.
 
-(Placeholder for Image 4: Diagrams of the LLM architecture for each scenario, highlighting which layers are fine-tuned in each case.)
+![Diagrams of the LLM architecture for each scenario, highlighting which layers are fine-tuned in each case.](images/llm-architecture.png)
+![Full Model](images/full-model.png)
+![Attention Only Model](images/attention-only.png)
+![MLP Only Model](images/mlp-only.png)
+
 
 ## Evaluation
 
@@ -238,17 +240,13 @@ This comprehensive evaluation approach provides multiple perspectives on model p
 
 ## Results and Interpretation
 
-![alt text](images/full-model-evaluation-metrics.png)
-![alt text](images/attention-model-evaluation-metrics.png)
-![alt text](images/mlp-model-evaluation-metrics.png)
-
 | Model Type | Exact Match | F1 Score | BLEU | ROUGE-1 | ROUGE-L | METEOR | Average Score |
 |------------|-------------|-----------|------|----------|----------|---------|---------------|
 | Full Model | 97.95 | 99.72 | 99.57 | 99.73 | 99.73 | 99.84 | 99.42 |
 | Attention Only | 64.91 | 91.65 | 87.85 | 92.85 | 92.64 | 92.55 | 87.08 |
 | MLP Only | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 | 99.99 | 100.00 |
 
-(Placeholder for Image 5: A table or graph displaying evaluation metrics—EM, F1, human evaluation scores—across the three fine-tuning scenarios.)
+![Model Performance Comparison](images/model-performance-comparison.png)
 
 
 ### Results Analysis
@@ -306,7 +304,6 @@ This comprehensive evaluation approach provides multiple perspectives on model p
 - **Model Stability:**
   - Fine-tuning only the MLP layers may reduce the risk of overfitting or destabilizing the model's language understanding capabilities, as the attention mechanisms remain unchanged.
 
-(Placeholder for Image 7: An infographic depicting the potential applications and benefits of MLP-focused updates in various industries.)
 
 ### Considerations and Recommendations
 
@@ -329,13 +326,19 @@ This comprehensive evaluation approach provides multiple perspectives on model p
 
 The results indicate that MLP layers play a pivotal role in storing and integrating new world knowledge within large language models. Fine-tuning only the MLP layers not only yields superior performance but also offers significant computational advantages over full model fine-tuning. This finding has substantial implications for how language models can be updated and maintained, potentially transforming practices in natural language processing and machine learning.
 
+**Model Interpretability**:
+
+- **Before**: [🔲🔲🔲🔲🔲] (Complete Black Box)
+- **Now**:    [⬜🔲🔲🔲🔲] (One aspect illuminated)
+- **Goal**:   [⬜⬜⬜⬜⬜] (Full interpretability)
+
 ## Demo
 
 To bring our findings to life, we have prepared a demo that showcases the practical implications of our research. By focusing on the MLP layers, we demonstrate how efficient updates can be achieved, allowing AI systems to evolve dynamically with the world they interact with.
 
 In the upcoming segment, we will present the materials visually and interactively, providing a comprehensive overview of our results. Additionally, we will discuss the model and dataset cards to ensure transparency and reproducibility of our work.
 
-(Placeholder for Image 8: A sneak peek of the interactive demo interface or a key visualization from the presentation.)
+![Demo](images/demo.png)
 
 ---
 ### References
